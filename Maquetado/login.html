@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(img/black_grey_vertical_wavy_lines_background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+        }
+        .cont{
+            background: linear-gradient(rgba(255, 255, 255, 0.626), rgba(44, 44, 44, 0.522));
+            position: relative;
+            width:50vw;
+            height: 70vh;
+            margin:0 auto;
+            border-radius: 10%;
+        }
+        h1,p{
+            text-align: center;
+        }
+        label,input{
+            font-size: 1.5rem;
+        }
+        .inpu{
+            display: inline-block;
+            position: absolute;
+            margin: 0 auto;
+            left: 30%;
+            margin-top: 5%;
+        }
+        input{
+            margin-top: 15%;
+        }
+        input[type=submit]{
+            display: inline-block;
+            border-radius: 10%;
+            position: absolute;
+            left:30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <h1 style="font-size: 3rem;">Login</h1>
+        <div class="inpu">
+            <form action="#" method="post">
+                <label for="">email:</label>
+                <input type="email" name="" id="">
+                <br>
+                <label for="">passw:</label>
+                <input type="password" name="" id="">
+                <br>
+                <input type="submit" value="Enviar">
+                <a href="signup.html" style="top: 5vh; right: -15vh; position: relative;">
+                    <p>No tienes cuenta?</p>
+                </a>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

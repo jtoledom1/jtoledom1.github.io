@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="menu-06/style.css">
+    <link rel="stylesheet" href="tarjetas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: "Cinzel", serif;
+        }
+        .contenedor{
+            position: relative;
+            display: flex;
+            justify-content: center;/*Pone un espacio entre los items*/
+            flex-wrap: wrap; /*Ayuda a que no se salga un weon del borde de la pantalla, alinea todo en el espacio de la pantalla mostrada, es decir no haces scroll hacia los lados*/
+            width: 100%;
+            height: 100vh;
+        }
+
+        .seccion-abajo{
+            position: relative;
+            top: 0%;
+            display: inline-block;
+            background: linear-gradient(rgb(255, 255, 255), rgba(148, 148, 148, 0.758));
+            z-index: 2;
+            width:100% ;
+        }
+        .seccion-dentro-deabajo{
+            display: flex;
+            text-align: center;
+            justify-content:center ;
+            align-items: center;
+        }
+        .tarjetas{
+            height: 114px;;
+            width: 120px; ;
+        }
+        .enmedio{
+            background-image: url(img/Aeropuerto-tarde.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .parrafo{
+            background-color: rgba(255, 255, 255, 0.923);
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            width: 50vw;
+            left: 25%;
+            padding: 10px;
+            box-shadow: 0px 10px 50px rgb(42, 42, 42);
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+            line-height: 1.5;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="menu__wrapper">
+            <div class="menu__bar">
+                <a  title="Logo" class="logo">
+                    <h1 style="color: white;">Servicios</h1>
+                </a>
+                <img class="menu-icon" src="menu-06/assets/burger-menu.svg" title='Burger Menu' alt='Burger Menu'
+                    onclick="toggleMenu(this)">
+
+                <ul class="navigation">
+                    <li>
+                        <a href="index.html"  title="Home">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about" title="About">
+                            Acerca de
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact-us" title="Contact Us">
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>    
+    </div>
+
+    <div class="contenedor"> <!--Este es el padre-->    
+            <div class="seccion-abajo">
+                <div class="enmedio">
+                    <br>
+                    <div class="parrafo">
+                        <p style="font-size: 1.5rem;">
+                            En Vuelos Toledo, nos enorgullece ofrecer una amplia gama de servicios diseñados para hacer que tu experiencia de viaje sea más fácil, eficiente y placentera. Desde la reserva de vuelos hasta la gestión de tus itinerarios, estamos aquí para cubrir todas tus necesidades de viaje. 
+                            <br>
+                            <br>
+                            Explora nuestros servicios a continuación:
+
+                        </p>
+                        <br>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+                <div class="seccion-dentro-deabajo">
+
+                    <div class="backgroundtarjetas">
+                        <div class="centering">
+                            <div class="articles">
+                                <a href="Reserva.html">
+                                    <article>
+                                        <figure>
+                                            <img
+                                                src="img/pexels-joel-super-188959-2315265.jpg"
+                                                alt="Preview"
+                                            >
+                                        </figure>
+                                        <div class="article-preview">
+                                            <h2>1. Reserva de Vuelos</h2>
+                                            <p>
+                                                Planifica tu próximo viaje con facilidad utilizando nuestra plataforma intuitiva de reserva de vuelos. 
+                                                <br>
+                                                <br>
+                                                Con acceso a una amplia selección de aerolíneas y rutas, encontrar el vuelo perfecto nunca ha sido tan sencillo.
+                                                
+                                                <a href="Reserva.html" class="read-more" title="Read More">
+                                                    Read more
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </article>
+    
+                                </a>
+                                <article>            
+                                    <figure>
+                                        <img
+                                            src="img/pexels-amar-9969359.jpg"
+                                            alt="Preview"
+                                        >
+                                    </figure>
+                                    <div class="article-preview">
+                                        <h2>2. Gestión de Reservas</h2>
+                                        <p>
+                                            Mantén un control total sobre tus reservas de vuelos con nuestra herramienta de gestión de reservas. 
+                                            <br>
+                                            <br>
+                                            Modifica itinerarios, añade servicios adicionales y gestiona tus preferencias de viaje con solo unos pocos clics.
+                                            
+                                            <a href="Gestionreservas.html" class="read-more" title="Read More">
+                                                Read more
+                                            </a>
+                                        </p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <figure>
+                                        <img
+                                            src="img/lugar-vuelo-cielo-atardecer.png"
+                                            alt="Preview"
+                                        >
+                                    </figure>
+                                    <div class="article-preview">
+                                        <h2>3. Compra de Boletos</h2>
+                                        <p>
+                                            Hazte con tus boletos de avión de manera rápida y segura a través de nuestra plataforma de compra de boletos. Con opciones de pago flexibles y un proceso de compra sin complicaciones, reservar tus vuelos nunca ha sido tan conveniente.            
+
+                                            <a href="Reserva.html" class="read-more">
+                                                Read more
+                                            </a>
+                                        </p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <figure>
+                                        <img
+                                            src="img/pexels-francogarciafilms-16144607.jpg"
+                                            alt="Preview"
+                                        >
+                                    </figure>
+                                    <div class="article-preview">
+                                        <h2>4. Servicio al Cliente</h2>
+                                        <p>
+                                            En Vuelos Toledo, creemos que cada viaje es único. Por eso, ofrecemos opciones de personalización para adaptar tu experiencia de viaje a tus necesidades y preferencias individuales. Desde asientos preferenciales hasta servicios especiales, estamos aquí para hacer que tu viaje sea verdaderamente inolvidable. 
+            
+                                            <a href="index.html" class="read-more">
+                                                Read more
+                                            </a>
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+<script src="menu-06/script.js"></script>
+</body>
+</html>

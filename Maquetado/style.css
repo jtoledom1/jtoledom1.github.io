@@ -1,0 +1,74 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Cinzel", serif;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 91.7%;
+    background-image: url('img/black_grey_vertical_wavy_lines_background.jpg'); /* Ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+  }
+  .container2{
+    background-color: #4f4f4ff0;
+    color: white;
+  }
+  section{
+    background-color: rgba(39, 34, 62, 0.751) ;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    
+  }
+  .content {
+    text-align: Left;
+    color: black; /* Color del texto */
+    height: 100%;
+    padding: 20px;
+  }
+  h1{
+    font-size: 12vw;
+
+  }
+  .p-hom,h2{
+    font-size: 3vw;
+  }
+  p{
+    font-size: 1.5vw;
+  }
+  h3{
+    font-size: 2vw;
+  }
+  .avion
+  {
+    display: flex;
+    position: fixed;
+    justify-content: left;
+    align-items: center;
+    background-image: url('img/lugar-vuelo-cielo-atardecer.png');
+    background-size: cover;
+    background-position: center;
+    transform: scaleX(-1);
+    height: 70%;
+    width: 60%;
+  }
+  .img01{
+    background-image: url(img/passport-ticket.png);
+  }
+  .img02{
+    background-image: url(img/Avion-Viajero.png);
+  }
+  .parallax-img{
+    display: block;
+    height: 20.75rem;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
