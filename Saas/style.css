@@ -1,0 +1,301 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "opensans",serif;
+}
+.divisiones{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.contenido{
+    background-image:url(imgs/FondoSalaesperaFuturistaAvion.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    gap: 5vh;
+    grid-template-rows:20% 50% 30%;
+}
+.menu{
+    background-color: #4e88f2;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 22% 56% 16%;
+    gap: 2%;
+}
+.logo{
+    display: grid;
+    grid-template-rows:60% 40%;
+    background-color: rgb(10, 16, 91);  
+}
+.avion-inside{
+    position: relative;
+    margin: 0 auto;
+    top:1vh;
+    padding: 1vh;
+    display: flex;
+    background-color:#69b6f1;
+    border-radius: 5%;
+    width: 20%;
+    border-style: solid;
+    border-width: .3vh;
+    border-color: white;
+}
+.avion-inside img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.Fly-by h1{
+    font-family: "Graduate", serif;
+    color: white;
+    font-size: 3.5vw;
+    font-style:oblique; 
+}
+.Fly-by{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    top:0.5vh;
+}
+.opciones{
+    display: grid;
+    padding: 5%;
+    grid-template-rows: 60% 40%;
+}
+.opciones input[type="button"] {
+    margin-bottom:3vh;
+    border-color: #00000000;
+    height: 20%;
+    width: 100%;
+    border-radius: 5%;
+}
+.salida{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items:end;
+}
+.salida input[type="button"] {
+    width: 20%;
+    height: 30%;
+    background-color:  rgba(38, 101, 97, 0.658);
+    color: white;
+    border-radius: 20%;
+    border-style: solid;
+}
+input[type="button"] {
+    font-family: "Opensans",sans-serif;
+    font-size: 1.5vw;
+    overflow: hidden; /* Oculta el texto que se desborde del contenedor */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos (...) al final del texto que se recorta */
+}
+input[type="button"]:hover {
+    background-color: #1d9dff;
+    color: white;
+    font-family: "Opensans",sans-serif;
+    box-shadow: #1d9dff 5px 2px 0px 0px;
+    font-size: 1.7vw;
+}
+.backgrnd-trans{
+    background-color: rgba(255, 255, 255, 0.742);
+    width: 70%;
+    height: 70vh;
+    position: relative;
+    margin: 0 auto;
+    top:20%; 
+    display: grid;
+    grid-template-rows: 30% 30% 30%;
+    gap:5%;
+}
+.avion-inside-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avion-inside-cont img {
+    box-shadow:rgba(192, 192, 192, 0.532) 10px 0px 10px 0px;
+    height: 100%;
+}
+.WELCOME{
+    width: 60%;
+    position: relative;
+    margin:0 auto;
+    overflow: hidden;
+    padding: 1vw;
+    font-size: 2vw;
+}
+.WELCOME h1 {
+    color: black;
+    font-family: "Graduate",serif;
+    display: flex;
+    justify-content: left;
+}
+#LEFT{
+    display: flex;
+    justify-content: right;
+}
+#Description{
+    background-color: rgba(245, 245, 245, 0.521);
+    border-radius: 10%;
+    position: relative;
+    margin:0 auto;
+    width: 70%;
+    overflow: hidden; /* Oculta el texto que se desborde del contenedor */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos (...) al final del texto que se recorta */
+    /* white-space: nowrap;  Evita que el texto se divida en varias líneas */
+    /*text-wrap: wrap;*/
+    text-align: center;
+    padding: 10px 10px 10px 5px;
+}
+#Description p{
+    font-size: 150%;
+}
+.contenedor-imgusr{
+    position: relative;
+    top: 1vh;
+    margin: 0 auto;
+    background-color: rgba(252, 249, 249, 0.656);
+    background-image: url(imgs/usuario.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 20%;
+    box-shadow: #0000007d 10px 10px;
+}
+.contenedor-imgusr:hover{
+    background-color: rgba(182, 181, 181, 0.779);
+}
+.introducir-data{
+    background-color: rgba(16, 16, 16, 0.575);
+    display: grid;
+    grid-template-columns: 20% 80%;
+    position: relative;
+    margin: 0 auto;
+    padding: 5vh;
+    width: 70%;
+    flex-wrap: wrap;
+    border-radius: 2%;
+    gap: 1vh;
+}
+.introducir-data div h3 {  
+    color: white;
+    font-size: 3vh;
+}
+.introducir-data div input{
+    width: 90%;
+    height: 3vh;
+    font-size: 3vh;
+}
+#Spacio-user{
+    position: relative;
+    margin: 0 auto;
+    grid-column:1 / 3;
+}
+#Spacio-user input{
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5vh;
+}
+input[type="submit"]{
+    border-radius: 10%;
+    background-color: black;
+    color: white;
+}
+input[type="submit"]:hover{
+    border-radius: 10%;
+    background-color: white;
+    color: black;
+}
+table{
+    background-color: #f9f8f8;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    top: 40vh;
+    position: relative;
+    font-size: 3vh;
+}
+td{
+    border: black;
+    border-style: solid;
+}
+td input[type="text"]{
+    background-color: #00000000;
+    border-color: #00000000;
+    width: 100%;
+    height: 5vh;
+    font-size: 2.5vw;
+}
+.acciones{
+    display: grid;
+    position: relative;
+    top: -20vh;
+    margin: 0 auto;
+    grid-template-columns: 61% 13% 13% 13% ;
+    background-color: #fbfbfbfc;
+    width: 60%;
+    height: fit-content;
+}
+.acciones h1{
+    color: #050303;
+    font-family: "Graduate", serif;
+    font-size: 3vw;
+    font-style:oblique;
+}
+.acciones div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.acciones div img:hover{
+    background-color: #00000048;
+}
+.acciones div img{
+ position: relative;
+ border-radius: 10px;
+ width: 50%;
+ height: 50%;
+}
+.registro:hover{
+    background-color: #404040;
+    input{
+        color: white;
+    }
+}
+#tarjetas input[type="text"]{
+    font-size: 2vw;
+}
+#tarjetas{
+    position: relative;
+    bottom: 0%;
+}
+.acciones1{
+    display: grid;
+    position: relative;
+    /*top: -20vh;*/
+    margin: 0 auto;
+    grid-template-columns: 61% 13% 13% 13% ;
+    background-color: #fbfbfbfc;
+    width: 60%;
+    height: fit-content;
+}
+.acciones1 div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.acciones1 div img{
+    position: relative;
+    border-radius: 10px;
+    width: 50%;
+    height: 50%;
+}
+.acciones1 div img:hover{
+    background-color: #00000048;
+}

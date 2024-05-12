@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor vuelos</title>
+</head>
+<body>
+    <div class="divisiones">
+        <div class="menu">
+            <div class="logo">
+                <div class="avion-inside">
+                    <img src="imgs/IconoazulAvionblanco.png" alt="">
+                </div>
+                <div class="Fly-by">
+                    <h1>Fly-by?</h1>
+                </div>
+            </div>
+            <div class="opciones">
+                <div >
+                    <a href="AdminUser.html">
+                        <input type="button" value="Usuario" class="opcs">
+                    </a>
+                    <a href="GestorVuelos.html">
+                        <input type="button" value="Gestor de vuelos" class="opcs">
+                    </a>
+                    <a href="GestorAviones.html">
+                        <input type="button" value="Gestor de aviones" class="opcs">
+                    </a>
+                </div>
+                <div >
+                </div>
+            </div>
+            <div class="salida">
+                <input type="button" value="Salir">
+            </div>
+        </div>
+
+        <div class="contenido">
+            <table>
+                <tr>
+                <td>#Vuelo</td>
+                <td>Tipo de vuelo</td>
+                <td>Fecha</td>
+                <td>Hora</td>
+                <td>Partida</td>
+                <td>Destino(s)</td>
+                <td>Duración</td>
+                <td>Costo</td>
+                </tr>
+                <tr class="registro">
+                <td>12989</td>
+                <td>Nacional</td>
+                <td><input type="date"></td>
+                <td><input type="time"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="Ciudad reynosa">Ciudad reynosa</option>
+                        <option value="Ciudad Juarez">Ciudad Juarez</option>
+                        <option value="Ciudad de México">Ciudad de México</option>
+                        <option value="Ciudad de México">Monterrey</option>
+                        <option value="Ciudad de México">Tijuana</option>
+                        <option value="Ciudad de México"> Yucatán</option>
+                        <option value="Ciudad de México"> Puebla</option>
+                        <option value="Ciudad de México"> Acapulco</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="" id="">
+                        <option value="Ciudad reynosa">Ciudad reynosa</option>
+                        <option value="Ciudad Juarez">Ciudad Juarez</option>
+                        <option value="Ciudad de México">Ciudad de México</option>
+                        <option value="Ciudad de México">Monterrey</option>
+                        <option value="Ciudad de México">Tijuana</option>
+                        <option value="Ciudad de México"> Yucatán</option>
+                        <option value="Ciudad de México"> Puebla</option>
+                        <option value="Ciudad de México"> Acapulco</option>
+                    </select>
+                </td>
+                <td> 2 hrs</td>
+                <td>$600</td>
+                
+                </tr>
+            </table>
+            <div class="acciones">
+                <div>
+                    <h1>Acciones</h1>
+                </div>
+                <div>
+                    <img src="imgs/agregar.svg" alt="">
+                </div>
+                <div>
+                    <img src="imgs/editar.svg" alt="">
+                </div>
+                <div>
+                    <img src="imgs/cruz.svg" alt="">
+                </div>
+                
+                
+            </div>
+
+
+        </div>
+    </div>
+</body>
+</html>
