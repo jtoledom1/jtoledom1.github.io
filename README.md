@@ -28,4 +28,19 @@ El sql está listo para correr en sqlserver con una máxima compatibilidad (Quiz
 El primer query que debes ejecutar será construccion-db
 
 Las consultas se encontrarán dentro de 'consultas-vistas-triggers'
+<hr>
+<br>
 
+# 🍉Documentación adicional🍉
+Contribuciones hechas por: 
+<br>
+<br>
+<a href="https://github.com/jtoledom1/Vuelos/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=jtoledom1/Vuelos" />
+</a>
+
+
+Made with [contrib.rocks](https://contrib.rocks).
+<br>
+<h2>Para encontrar más documentción acerca del proyecto, toda la explicación y parte visual se podrán ver</h2>
+<a href="https://miro.com/app/board/uXjVKKXy5oY=/">Aquí...</a>
