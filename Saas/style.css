@@ -264,7 +264,7 @@ td input[type="text"]{
 }
 .registro:hover{
     background-color: #404040;
-    input{
+    td{
         color: white;
     }
 }
