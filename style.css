@@ -1,0 +1,25 @@
+*{
+    color: white;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-image: url(source/Galaxia.jpg);
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 30% 50%;
+    column-gap: 2%;
+}
+
+.gato{
+    background-image: url(source/Gato.png
+    );
+    height:100vh;
+}
+.presentacion{
+    background-color: rgba(0, 0, 0, 0.369);
+    height:fit-content;
+    margin: 10%;
+}
