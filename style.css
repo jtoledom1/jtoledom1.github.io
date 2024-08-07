@@ -9,17 +9,28 @@ body{
     height: 100vh;
     width: 100vw;
     display: grid;
-    grid-template-columns: 30% 50%;
-    column-gap: 2%;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    justify-content: end;
+    column-gap: 2px;
+
 }
 
 .gato{
-    background-image: url(source/Gato.png
-    );
-    height:100vh;
+    margin: 0 auto;
+    height:fit-content;
+    padding: 10%;
+}
+
+#imgGato{
+height: 45vh;
 }
 .presentacion{
     background-color: rgba(0, 0, 0, 0.369);
     height:fit-content;
-    margin: 10%;
+    width: fit-content;
+    padding: 3vh;
+    border-radius: 1vh;
+    align-items: center;
+    justify-content: end;
 }
