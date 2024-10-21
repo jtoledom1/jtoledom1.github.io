@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar Ejercicio Específico</title>
+</head>
+<body>
+    <h1>Registrar Ejercicio Específico</h1>
+    <form action="registrar_ejercicio_especifico.php" method="post">
+        <label for="id_usuario">ID del Usuario:</label>
+        <input type="number" id="id_usuario" name="id_usuario" required><br><br>
+        
+        <label for="id_rutina">ID de la Rutina:</label>
+        <input type="number" id="id_rutina" name="id_rutina" required><br><br>
+        
+        <label for="nombre_ejercicio">Nombre del Ejercicio:</label>
+        <input type="text" id="nombre_ejercicio" name="nombre_ejercicio" required><br><br>
+        
+        <label for="categoria_ejercicio">Categoría del Ejercicio:</label>
+        <select id="categoria_ejercicio" name="categoria_ejercicio" required>
+            <option value="brazo">Brazo</option>
+            <option value="espalda">Espalda</option>
+            <option value="pecho">Pecho</option>
+            <option value="hombro">Hombro</option>
+            <option value="pierna">Pierna</option>
+            <option value="abdomen">Abdomen</option>
+        </select><br><br>
+        
+        <label for="peso">Peso Cargado (kg):</label>
+        <input type="number" id="peso" name="peso" step="0.01" required><br><br>
+        
+        <label for="repeticiones">Número de Repeticiones:</label>
+        <input type="number" id="repeticiones" name="repeticiones" required><br><br>
+        
+        <button type="submit">Registrar Ejercicio</button>
+    </form>
+</body>
+</html>

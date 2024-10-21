@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Registro de Usuario</title>
+    <script>
+        function handleFormSubmit(event) {
+            event.preventDefault(); // Evita el envío tradicional del formulario
+            var form = event.target;
+            var formData = new FormData(form);
+
+            fetch(form.action, {
+                method: form.method,
+                body: formData
+            })
+            .then(response => response.text())
+            .then(text => {
+                if (text === "success") {
+                    alert("Usuario registrado con éxito.");
+                    form.reset();  // Reinicia el formulario tras el registro exitoso
+                } else {
+                    alert(text);  // Muestra los mensajes de error o información
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);  // Muestra errores de la consola
+                alert("Error al registrar el usuario.");
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Registro de Usuario</h1>
+    <form action="registro_usuario.php" method="post" onsubmit="handleFormSubmit(event)">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña" required><br><br>
+        <label for="confirmar_contraseña">Confirmar Contraseña:</label>
+        <input type="password" id="confirmar_contraseña" name="confirmar_contraseña" required><br><br>
+        <button type="submit">Registrar</button>
+    </form>
+</body>
+</html>

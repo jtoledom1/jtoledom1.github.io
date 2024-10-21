@@ -1,0 +1,86 @@
+/* Estilos para el dashboard */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente más moderna */
+    background: linear-gradient(to bottom, #000000, #ffffff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333; /* Color de texto más oscuro para mejor legibilidad */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Ocupar todo el ancho */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+    width: 100%; /* Ocupar todo el ancho */
+    margin-top: 20px; /* Espaciado entre elementos */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #555; /* Fondo predeterminado para los enlaces */
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #666; /* Cambiar al pasar el mouse */
+    color: #ddd; /* Texto más claro al pasar el mouse */
+}
+
+form {
+    background: #f8f8f8; /* Fondo claro para el formulario */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 20px; /* Espacio antes del formulario */
+}
+
+input[type="email"], button {
+    padding: 10px;
+    margin-top: 10px; /* Espacio entre campos */
+    border: none;
+    border-radius: 4px;
+    width: 300px; /* Ancho fijo para los campos de entrada */
+    display: block;
+}
+
+button {
+    background-color: #333; /* Fondo oscuro para el botón */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #555; /* Cambio de color al pasar el mouse */
+}

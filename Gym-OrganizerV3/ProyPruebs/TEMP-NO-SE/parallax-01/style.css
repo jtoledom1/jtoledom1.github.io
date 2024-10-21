@@ -1,0 +1,53 @@
+
+:root {
+    --background: #3C343D;
+    --background-border: #6B626C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    
+}
+
+.body-class{
+    font-family: Poppins;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: white;
+}
+
+.parallax-image {
+    display: block;
+    height: 58.75rem;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.parallax-image-01 {
+    background-image: url("assets/ai-generated-8703079_1280.jpg");
+}
+
+.parallax-image-02 {
+    background-image: url("assets/man-5886574_1280.jpg");
+
+}
+
+.parallax-image-03 {
+    background-image: url("assets/sports-1452965_1280.jpg");
+}
+.section-parllax {
+    padding: 4rem;
+    background-color: white;
+
+}
+
+section > h2 {
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+  

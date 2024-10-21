@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Iniciar Sesión</title>
+    <script>
+        function handleLoginSubmit(event) {
+            event.preventDefault();
+            var form = event.target;
+            var formData = new FormData(form);
+    
+            fetch(form.action, {
+                method: form.method,
+                body: formData
+            })
+            .then(response => response.text())
+            .then(text => {
+                if (text.includes("success")) { // Verifica si la respuesta incluye 'success'
+                    window.location.href = "dashboard.html"; // Redirige al dashboard
+                } else {
+                    alert(text); // Muestra mensaje de error o la respuesta del servidor
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert("Error al iniciar sesión.");
+            });
+        }
+    </script>
+    
+</head>
+<body>
+    <h1>Iniciar Sesión</h1>
+    <form action="log-in.php" method="post" onsubmit="handleLoginSubmit(event)">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña" required><br><br>
+        <button type="submit">Iniciar Sesión</button>
+    </form>
+</body>
+</html>

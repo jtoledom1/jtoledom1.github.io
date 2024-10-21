@@ -1,0 +1,107 @@
+:root {
+    --primary: #000000;
+    --primary-hover: #7771f7;
+    --text: #383740;
+    --text-lighter: #71707d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#000000, #ffffff);
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 20px;
+}
+
+h1 {
+    color: var(--text);
+    margin-bottom: 20px;
+}
+
+label {
+    color: var(--text);
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--text-lighter);
+    border-radius: 5px;
+    font-size: 16px;
+    color: var(--text);
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--primary);
+    outline: none;
+}
+
+button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--primary-hover);
+}
+
+.text-field {
+    position: relative;
+}
+
+.text-field input::-webkit-input-placeholder {
+    color: var(--text-lighter);
+}
+
+.text-field input:focus + svg {
+    stroke: var(--primary);
+}
+
+.input-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-lighter);
+}
+
+.input-icon:focus {
+    color: var(--primary);
+}
+
+.my-form__actions a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.my-form__actions a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Mediciones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Registro de Mediciones</h1>
+    <form action="registro_mediciones.php" method="post">
+        <label for="id_usuario">ID del Usuario:</label>
+        <input type="number" id="id_usuario" name="id_usuario" required><br><br>
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" name="peso" step="0.01" required><br><br>
+        <label for="estatura">Estatura (cm):</label>
+        <input type="number" id="estatura" name="estatura" required><br><br>
+        <label for="grasa_corporal">Grasa Corporal (%):</label>
+        <input type="number" id="grasa_corporal" name="grasa_corporal" step="0.01" required><br><br>
+        <button type="submit">Registrar Mediciones</button>
+    </form>
+</body>
+</html>

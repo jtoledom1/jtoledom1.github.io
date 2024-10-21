@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Agregar Rutina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Agregar Rutina</h1>
+    <form action="agregar_rutina.php" method="post">
+        <label for="nombre_rutina">Nombre de la Rutina:</label>
+        <input type="text" id="nombre_rutina" name="nombre_rutina" required><br><br>
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" name="descripcion" required></textarea><br><br>
+        <label for="dificultad">Dificultad:</label>
+        <select id="dificultad" name="dificultad">
+            <option value="principiante">Principiante</option>
+            <option value="intermedio">Intermedio</option>
+            <option value="avanzado">Avanzado</option>
+        </select><br><br>
+        <label for="categoria">Categoría:</label>
+        <select id="categoria" name="categoria">
+            <option value="cardio">Cardio</option>
+            <option value="fuerza">Fuerza</option>
+            <option value="flexibilidad">Flexibilidad</option>
+            <option value="otro">Otro</option>
+        </select><br><br>
+        <button type="submit">Agregar Rutina</button>
+    </form>
+</body>
+</html>
