@@ -1,0 +1,178 @@
+/* Establece las reglas base para todos los elementos, removiendo márgenes, padding y ajustando el box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif; /* Establece la fuente por defecto para toda la página */
+}
+
+/* Estilos para el <body> que cubre la altura completa de la pantalla, define colores de fondo, e imágenes */
+body {
+    min-height: 100vh; /* Asegura que el body tenga al menos la altura del viewport */
+    background-color: #000; /* Color de fondo negro */
+    background-image: url('https://wallpaperaccess.com/full/2465431.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Asegura que la imagen de fondo cubra completamente el espacio */
+    background-position: center; /* Centra la imagen de fondo */
+    color: #fff; /* Color de texto blanco para contrastar con el fondo oscuro */
+}
+
+/* Estilos para listas, removiendo cualquier estilo por defecto */
+li {
+    list-style: none;
+}
+
+/* Estilos globales para enlaces */
+a {
+    text-decoration: none; /* Remueve el subrayado de los enlaces */
+    color: #fff; /* Color blanco para los enlaces */
+    font-size: 1rem; /* Tamaño estándar para el texto del enlace */
+}
+
+/* Estilos para enlaces al pasar el mouse */
+a:hover {
+    color: #FFA500; /* Cambia el color a naranja claro para mejorar la visibilidad */
+}
+
+/* Estilos para la cabecera */
+header {
+    background: rgba(25, 25, 25, 0.42); /* Fondo semi-transparente oscuro para la cabecera */
+    padding: 1rem 2rem; /* Espaciado interno para la cabecera */
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    display: flex; /* Uso de Flexbox para alinear los elementos internos */
+    justify-content: space-between; /* Distribuye el espacio entre elementos */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+}
+
+/* Estilos para el logo y el enlace del logo */
+.navbar .logo a {
+    font-size: 1.5rem; /* Tamaño de fuente más grande para el logo */
+    font-weight: bold; /* Texto en negrita para el logo */
+}
+
+/* Estilos para los enlaces de la barra de navegación */
+.navbar .links {
+    display: flex; /* Uso de Flexbox para alinear los enlaces */
+    justify-content: center; /* Centra los enlaces horizontalmente */
+    gap: 1rem; /* Espacio entre cada enlace */
+}
+
+/* Estilos adicionales para cuando los enlaces están visibles en modo móvil */
+.navbar .links.show {
+    display: flex;
+}
+
+/* Estilos para el botón del menú tipo hamburguesa, oculto por defecto */
+.navbar .toggle_btn {
+    display: none; /* Oculto por defecto */
+    color: #fff; /* Color blanco para el icono del menú */
+    font-size: 1.5rem; /* Tamaño del icono del menú */
+    cursor: pointer; /* Cursor tipo puntero para indicar clickeabilidad */
+}
+
+/* Media queries para ajustes responsivos */
+@media (max-width: 992px) {
+    /* Estilos cuando la pantalla es menor a 992px */
+    .navbar .links,
+    .navbar .action_btn {
+        display: none; /* Oculta los enlaces y el botón de acción en pantallas pequeñas */
+    }
+    .navbar .toggle_btn {
+        display: block; /* Muestra el botón del menú hamburguesa en pantallas pequeñas */
+    }
+}
+
+/* Estilos para el botón 'Comenzar' */
+.action_btn {
+    background-color: orange; /* Fondo naranja */
+    color: #fff; /* Texto blanco */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    border: none; /* Sin bordes */
+    border-radius: 20px; /* Bordes redondeados */
+    font-size: 0.8rem; /* Tamaño de fuente reducido */
+    font-weight: bold; /* Texto en negrita */
+    cursor: pointer; /* Cursor tipo puntero */
+    transition: transform 0.2s ease; /* Transición suave para el efecto de transformación */
+}
+
+/* Estilos para el botón 'Comenzar' al pasar el mouse o enfocarlo */
+.action_btn:hover, .action_btn:focus {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el mouse o enfocar */
+    background-color: darkorange; /* Cambia el color a un naranja más oscuro */
+}
+
+/* Estilos para las secciones del contenido principal */
+section {
+    background-color: rgba(16, 16, 16, 0.87); /* Fondo oscuro semi-transparente para mejorar la legibilidad */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px auto; /* Margen automático para centrar y espacio vertical */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para efecto de profundidad */
+    max-width: 800px; /* Ancho máximo para controlar el tamaño en pantallas grandes */
+}
+
+/* Estilos para imágenes dentro de las secciones */
+img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho de su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen automáticamente */
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+    display: block; /* Las imágenes se muestran como bloques para permitir márgenes automáticos */
+    margin: 10px auto; /* Centra las imágenes horizontalmente y añade espacio vertical */
+}
+
+/* Estilos para la información de contacto y enlaces de redes sociales */
+.contact-info p, .social-media-links a {
+    margin: 10px 0; /* Espacio vertical entre elementos de contacto y enlaces */
+}
+
+/* Estilos para los enlaces de redes sociales */
+.social-media-links a {
+    display: inline-block; /* Los enlaces se comportan como bloques en línea para alinearlos horizontalmente */
+    color: white; /* Texto blanco para los íconos de redes sociales */
+    margin-right: 15px; /* Espacio a la derecha de cada enlace para separación */
+    font-size: 20px; /* Tamaño de los íconos de redes sociales */
+}
+
+/* Estilos para el formulario de contacto */
+form {
+    margin-top: 20px; /* Espacio superior para separar el formulario de elementos anteriores */
+}
+
+/* Estilos comunes para inputs de texto, email y áreas de texto */
+input[type="text"], input[type="email"], textarea {
+    width: 100%; /* Ocupa el 100% del ancho disponible */
+    padding: 10px; /* Espaciado interno para facilidad de escritura */
+    margin-bottom: 10px; /* Espacio debajo de cada campo para separación */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    border: 1px solid #ccc; /* Borde sutil para definir los campos */
+}
+
+/* Estilos para el área de texto */
+textarea {
+    height: 100px; /* Altura fija para el área de texto */
+}
+
+/* Estilos para los botones del formulario */
+button.btns {
+    background-color: orange; /* Fondo naranja para el botón */
+    color: white; /* Texto blanco para contraste */
+    padding: 10px 20px; /* Espaciado interno para comodidad al presionar */
+    border: none; /* Sin bordes externos */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor tipo puntero para indicar clickeabilidad */
+    display: block; /* Muestra el botón como bloque para centrarlo fácilmente */
+    width: 100%; /* El botón ocupa todo el ancho disponible */
+}
+
+/* Estilos para el botón del formulario al pasar el mouse */
+button.btns:hover {
+    background-color: darkorange; /* Cambia el fondo a un naranja más oscuro */
+}
+
+/* Estilos para efectos visuales adicionales en imágenes */
+.imggg{
+    box-shadow: 2px 2px 0px rgba(107, 61, 0, 0.373); /* Sombra sutil para dar profundidad */
+}

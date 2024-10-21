@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata para la página, incluyendo charset, viewport, y el título -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Gym-Organizer</title>
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cabecera de la página -->
+    <header>
+        <div class="navbar">
+            <!-- Logo y enlace al inicio de la página o sección hero -->
+            <div class="logo"><a href="#hero">Gym-Organizer</a></div>
+            <!-- Navegación principal con enlaces a diferentes secciones de la página -->
+            <ul class="links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="measures.html">Medidas</a></li>
+                <li><a href="#contact">Contacto</a></li> 
+            </ul>
+            <!-- Botón para iniciar sesión o registro, visible en todas las vistas -->
+            <a href="UserData.html" class="action_btn">Comenzar</a>
+            <!-- Botón del menú hamburguesa para la vista móvil -->
+            <div class="toggle_btn" onclick="toggleMenu()">☰</div>
+        </div>
+    </header>
+    <main>
+        <!-- Sección principal o hero, primera vista al entrar al sitio -->
+        <section id="hero">
+            <h1>Bienvenidos a Gym-Organizer</h1>
+            <!-- Imagen representativa del gimnasio -->
+            <img src="Source/plan-30-dias.jpg" alt="Vista del Gimnasio" class="imggg">
+            <!-- Descripción breve del propósito del sitio -->
+            <p>Descubre cómo Gym-Organizer puede transformar tu rutina de ejercicios y ayudarte a lograr tus metas de fitness con programas personalizados y seguimiento de progreso.</p>
+        </section>
+        <!-- Sección sobre la empresa o el gimnasio -->
+        <section id="about">
+            <h2>Acerca de Nosotros</h2>
+            <img src="Source/key-to-fitness-scaled.jpg" alt="Fitness">
+            <div class="imggg">
+                <p>En Gym-Organizer, estamos dedicados a mejorar tu salud y bienestar. Ofrecemos herramientas personalizadas para el seguimiento de medidas corporales y desarrollo de rutinas de ejercicios que se adaptan a cada etapa de tu entrenamiento.</p>
+            </div>
+        </section>
+        <!-- Sección de servicios ofrecidos -->
+        <section id="services">
+            <h2>Nuestros Servicios</h2>
+            <p>Desde principiantes hasta atletas avanzados, Gym-Organizer ofrece una variedad de servicios incluyendo análisis de medidas corporales, recomendaciones de rutinas personalizadas, y consejos de nutrición para optimizar tu salud y rendimiento físico.</p>
+        </section>
+        <!-- Sección de contacto -->
+        <section id="contact">
+            <h2>Contacto</h2>
+            <div class="contact-info">
+                <br>
+                <p><strong>Email:</strong> info@gym-organizer.com</p>
+                <p><strong>Teléfono:</strong> +1 234 567 8900</p>
+                <p><strong>Dirección:</strong> 123 Fitness Street, Gym City, GC 12345</p>
+            </div>
+            <!-- Enlaces a redes sociales -->
+             <!--NO ACTIVA TODAVÍA, Sección apartada para una futura integración-->
+            <div class="social-media-links">
+                <a href="#" target="_blank"><i class="fa fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-youtube"></i></a>
+            </div>
+            <!-- Formulario de contacto para enviar mensajes -->
+            <form action="rutinas.html" method="post">
+                <input type="text" name="name" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                <textarea name="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                <button type="submit" class="btns">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+    <!-- Script para manejar el menú desplegable en dispositivos móviles -->
+    <script>
+        function toggleMenu() {
+            var links = document.querySelector('.navbar .links');
+            links.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

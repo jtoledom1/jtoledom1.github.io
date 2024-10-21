@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym-Organizer - Datos del Usuario</title>
+    <link rel="stylesheet" href="css/StylesUD.css">
+</head>
+<body>
+    <header>
+        <div class="cl1">
+            <button onclick="location.href='index2.html'" class="btns">Home</button>
+        </div>
+    </header>
+
+    <div class="cl3">
+        <form action="UserData.php" method="post">
+            <h1>Usuario</h1>
+            <br>
+            <div class="cl2">
+                <label>Nametag:</label>
+                <input type="text" name="Nametag" required>
+            </div>
+            <div class="cl2">
+                <label>Password:</label>
+                <input type="password" name="Password" required>
+            </div>
+            <div class="cl2">
+                <label>Level:</label>
+                <select name="level" required>
+                    <option value="">Select Level</option>
+                    <option value="Amateur">Amateur</option>
+                    <option value="Intermedio">Intermedio</option>
+                    <option value="Avanzado">Avanzado</option>
+                </select>
+            </div>
+            <div class="cl2">
+                <label>Objetivo:</label>
+                <select name="Objetivo" required>
+                    <option value="">Select Objective</option>
+                    <option value="Legs">Tren inferior</option>
+                    <option value="Chest">Tren superior</option>
+                    <option value="Duo">Ambos</option>
+                </select>
+            </div>
+            <div class="cl2">
+                <br>
+                <button type="submit" class="btns">Registrar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

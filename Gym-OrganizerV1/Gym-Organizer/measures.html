@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Registro de Medidas - Gym-Organizer</title>
+</head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        body {
+            background-image: url('https://wallpaperaccess.com/full/2465431.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            height: 100vh;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        header, .cl3, .cl1, .cl2 {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cl3 {
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        input[type="text"], input[type="password"], select {
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: calc(100% - 22px);
+        }
+
+        .btns {
+            padding: 10px 20px;
+            background-color: orange;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btns:hover {
+            background-color: darkorange;
+        }
+    </style><body>
+    <header>
+        <div class="cl1">
+            <input type="submit" value="Home" onclick="location.href='index2.html'" class="btns">
+            <input type="submit" value="Rutinas" onclick="location.href='rutinas.html'" class="btns">
+        </div>
+    </header>
+    
+    <div class="cl3" id="smt">
+        <h1>Registro de Medidas</h1>
+        <form action="submit_measures.php" method="post">
+            <div class="cl2">
+                <label>Bícep (cm):</label>
+                <input type="text" name="Bicep" required>
+            </div>
+            <div class="cl2">
+                <label>Pecho (cm):</label>
+                <input type="text" name="Chest" required>
+            </div>
+            <div class="cl2">
+                <label>Cintura (cm):</label>
+                <input type="text" name="Waist" required>
+            </div>
+            <div class="cl2">
+                <label>Cadera (cm):</label>
+                <input type="text" name="Hip" required>
+            </div>
+            <div class="cl2">
+                <label>Peso (kg):</label>
+                <input type="text" name="Weight" required>
+            </div>
+            <div class="cl2">
+                <label>Altura (cm):</label>
+                <input type="text" name="Height" required>
+            </div>
+            <div class="cl2">
+                <input type="submit" value="Registrar Medidas" class="btns">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="menu-06/style.css">
+  <link rel="stylesheet" href="parallax-01/style.css">
+  <link rel="stylesheet" href="footer-02/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap"
+      rel="stylesheet"
+  >
+  <style>
+    p{
+        font-size: 1.25rem;
+        text-align: justify;
+        text-shadow: 10px 10px 0px 0 px rgba(0, 0, 0, 0.222);
+    }
+
+    .backtop{
+        display:block;
+        position: fixed;
+        bottom:1vh;
+        right: 1vh;
+        background:radial-gradient(rgba(248, 248, 248, 0.79),rgba(61, 61, 61, 0.449)) ;
+        border-radius: 20%;
+        /*background-image:url(parallax-01/assets/flecha-hacia-arriba.png);*/
+        background-position: center;
+        background-repeat:no-repeat;
+        background-size: cover;
+        height: 3vw;
+        width: 3vw;
+    }
+    .backtopimg{
+        display:block;
+        position: fixed;
+        bottom:1vh;
+        right: 1vh;
+        border-radius: 20%;
+        background-image:url(parallax-01/assets/flecha-hacia-arriba.png);
+        background-position: center;
+        background-repeat:no-repeat;
+        background-size: cover;
+        height: 3vw;
+        width: 3vw;
+    }
+  </style>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <div>
+        <a href="#top">
+            <div class="backtop">
+                <div class="backtopimg">
+                    <img src="parallax-01/assets/flecha-hacia-arriba.png" alt="">
+                </div> 
+            </div>
+   
+        </a>        
+        <div class="background">
+            <div class="menu__wrapper">
+                <div class="menu__bar">
+                    
+                    <a href="#" title="Logo" class="logo">
+                        <img src="login-03/assets/image.png" alt="" style="display: inline-block;filter: brightness(0) invert(1);">
+                        <h1 style="color: white; display: inline-block; position: absolute; margin-left:2vw; margin-top: 1vh;">Gym-Organizer</h1>
+                    </a>
+                    
+                    <img class="menu-icon" src="menu-06/assets/burger-menu.svg" title='Burger Menu' alt='Burger Menu'
+                        onclick="toggleMenu(this)">
+
+                    <ul class="navigation">
+                        <li>
+                            <a href="#about" title="About">
+                                Acerca de
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#services" title="Services">
+                                Servicios
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#levels" title="levels">
+                                Niveles
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="signup-01/login.html"Log-in">
+                                Log-in
+                            </a>
+                        </li>
+                        <li>
+                            <a href="signup-01/Index.html" title="Log-on">
+                                Sign-up
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact-us" title="Contact Us">
+                                Contacto
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>    
+        </div>
+
+        <div class="body-class">
+            <div class="parallax-image parallax-image-01" id="top"></div>
+                <section class="section-parllax" id="about">
+                    <h2 >Acerca de nosotros</h2>
+                    <p>
+                        <br>
+                        Bienvenido a Gym-Organizer, tu compañero de confianza en el emocionante viaje hacia una vida más saludable y en forma. En un mundo donde el bienestar físico es una prioridad, estamos aquí para apoyarte en cada paso del camino, sin importar tu nivel de experiencia en el gimnasio. Somos más que una simple página web, somos tu aliado personal, dedicado a hacerte sentir seguro y capacitado en cada entrenamiento.
+                        <br>
+                        <br>
+                        ¿Qué nos distingue? Nuestro compromiso contigo va más allá de ofrecerte una lista de ejercicios genéricos. En Gym-Organizer, entendemos que cada persona es única, con diferentes metas y necesidades. Por eso, hemos creado una plataforma intuitiva que te permite llevar un seguimiento personalizado de tu progreso en el gimnasio.
+                        <br>
+                    </p>
+                   
+                </section>
+            <div class="parallax-image parallax-image-02" id="blog"></div>
+                <section class="section-parllax" id="services">
+                    <h2>Servicios</h2>
+                    <p>
+
+                        <br>
+                        ¿Te preguntas cómo funciona? Es simple. Con nuestra herramienta de seguimiento de medidas corporales, puedes registrar tus avances semanales y observar cómo tu cuerpo se transforma con el tiempo. Desde la cintura hasta los bíceps, estamos aquí para celebrar cada logro contigo.
+                        <br>
+                        <br>
+                        Pero eso no es todo. ¿Alguna vez has sentido que te pierdes en el laberinto de pesas y máquinas del gimnasio? ¡No te preocupes! Con nuestra función de seguimiento de pesos, te ayudamos a registrar el progreso de cada ejercicio, desde el banco hasta la sentadilla. Ya no tendrás que adivinar cuánto levantaste la semana pasada; con nosotros, esa información está al alcance de tus manos.
+                        <br>
+                        <br>
+                        ¿Necesitas inspiración para tu próxima rutina? ¡Estamos aquí para ayudarte! Nuestro equipo de expertos ha diseñado una variedad de programas de entrenamiento adaptados a diferentes objetivos, ya sea que estés buscando aumentar tu masa muscular, quemar grasa o simplemente mantenerte activo. Además, nuestros tutoriales detallados te guiarán a través de cada ejercicio, asegurándote de que mantengas la forma correcta y evites lesiones.
+                        <br>
+                        <br>
+                        En Gym-Organizer, creemos en la comunidad. Por eso, no solo ofrecemos herramientas y recursos, sino también un espacio donde puedes conectarte con otros entusiastas del fitness, compartir tus experiencias y recibir apoyo mutuo en tu viaje hacia una mejor versión de ti mismo.
+                        <br>
+                        <br>
+                        Así que únete a nosotros hoy y déjanos ser tu compañero en el camino hacia una vida más saludable y en forma. Juntos, podemos alcanzar cualquier meta que te propongas. ¡Nos vemos en el gimnasio!
+                        <br>
+                        <br>
+
+                    </p>
+                </section>
+            <div class="parallax-image parallax-image-03"></div>
+                <section class="section-parllax" id="levels">
+                    <h2>Niveles</h2>
+                    <p>
+                        Se buscó crear un sistema que ayudara a llevar un mejor control de rutina, orientado para aquellas personas que realizan entrenamiento de pesas. No importa el nivel del usuario, principiantes intermedios y avanzados se pueden servir de este sistema.
+<br>
+<br>
+                        Sabemos que el camino puede lucir complejo, es por eso que no te abrumaremos con tantas opciones al principio y para ayudarte en tu camino te ponemos a tu disposición una sección de guía informativa dónde te pondremos links recomendados. 
+                        La vida es un proceso y como tal se debe empezar a progresar de apoco, conforme te sientas listo podrás seleccionar la opción «intermedio» dónde descubrirás que ahora puedes elegir/organizar lo qué vas a entrenar y en qué día lo harás, como el nivel todavía es intermedio te recomendamos hacer uso de la lista de ejercicios preestablecidos, ¡no te preocupes! el catálogo es muy amplio y abarca la mayoría de los músculos.
+<br>
+<br>                 
+                        La vida es un proceso y como tal se debe empezar a progresar de apoco, conforme te sientas listo podrás seleccionar la opción «intermedio» dónde descubrirás que ahora puedes elegir/organizar lo qué vas a entrenar y en qué día lo harás, como el nivel todavía es intermedio te recomendamos hacer uso de la lista de ejercicios preestablecidos, ¡no te preocupes! el catálogo es muy amplio y abarca la mayoría de los músculos.
+<br>
+<br>
+                        El nivel avanzado incluye todo lo anteriormente señalado y en este nivel encontrarás un acceso total a nuestra herramienta ya que damos por sentado que estás familiarizado con la mayoría de los conceptos que se ponen en este organizador!
+<br>
+<br>
+                    </p>
+                </section>
+
+                <div class="footer-body">
+                    <div class="footer">
+                        <div class="footer-wrapper">
+                            <div class="footer-columns">
+                                <section class="footer-logo-column">
+                                    <a href="/" aria-label="Go to GitHub homepage" class="footer-logo">
+                                        <svg height="30" aria-hidden="true" viewBox="0 0 45 16" version="1.1" width="84"
+                                            data-view-component="true">
+                                           
+                                        </svg>
+                                    </a>
+                                    <div>
+                                        <h3>Visita nustro github</h3>
+                                        <p>Para más proyectos como este, plantillas, desarrollo de aplicaciones, etc.</p>
+                                    </div>
+                                    <a class="subscribe-btn" href="https://github.com/jtoledom1">
+                                        Visítanos
+                                    </a>
+                                </section>
+                                <div class="other-columns">
+                                    <section>
+                                        <h3>Product</h3>
+                                        <ul>
+                                            <li>
+                                                <a href="#" title="Features">Features</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Enterprise">Enterprise</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Copilot">Copilot</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Security">Security</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Pricing">Pricing</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Team">Team</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Resources">Resources</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Roadmap">Roadmap</a>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                    <section>
+                                        <h3>Resources</h3>
+                                        <ul>
+                                            <li>
+                                                <a href="#" title="Support">Support</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Sitemap">Sitemap</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Newsletter">Newsletter</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Help Centre">Help Centre</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Investor">Investor</a>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                    <section>
+                                        <h3>Support</h3>
+                                        <ul>
+                                            <li>
+                                                <a href="#" title="About Us">Docs</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Blog">Community Forum</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Careers">Professional Services</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Press">Premium Support</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Contact">Skills</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Contact">Status</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Contact Github">Contact Github</a>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                    <section>
+                                        <h3>Company</h3>
+                                        <ul>
+                                            <li>
+                                                <a href="#" title="Terms and services">
+                                                    About
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Privacy Policy">
+                                                    Customer Stories
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Cookies">
+                                                    Blog
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Licenses">
+                                                    Licenses
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Cookies">
+                                                    Contact
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                <!-- bottom part section -->
+            
+                        <div class="footer-bottom">
+                            <div class="footer-bottom-wrapper">
+                                <small>© <span id="year"></span> GitHub Inc.</small>
+                                <ul class="footer-bottom-links">
+                                    <li>
+                                        <a href="#" title="Terms">Terms</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Privacy">Privacy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Security">Sitemap</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Security">What is Git?</a>
+                                    </li>
+                                </ul>
+                                <div class="social-wrapper">
+                                    <div class='social-links'>
+                                        <ul>
+                                            <li>
+                                                <a href="#" title="Facebook">
+                                                    <img src="footer-02/assets/facebook.svg" alt='Facebook'>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Instagram">
+                                                    <img src="footer-02/assets/instagram.svg" alt='Instagram'>
+                                                </a></a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Linkedin">
+                                                    <img src="footer-02/assets/linkedin.svg" alt='Linkedin'>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Twitter">
+                                                    <img src="footer-02/assets/twitter.svg" alt='Twitter'>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Youtube">
+                                                    <img src="footer-02/assets/youtube.svg" alt='YouTube'>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+        </div>
+
+    </div>
+
+
+
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <script src="menu-06/script.js"></script>
+</body>
+</html>

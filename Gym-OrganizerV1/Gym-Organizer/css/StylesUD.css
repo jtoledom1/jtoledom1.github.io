@@ -1,0 +1,74 @@
+/* Reset básico de CSS para todos los elementos de la página */
+* {
+    margin: 0; /* Elimina los márgenes por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+    box-sizing: border-box; /* Cambia el modelo de caja para incluir padding y border dentro del width/height */
+    font-family: 'Open Sans', sans-serif; /* Establece una fuente común para todos los elementos */
+}
+
+/* Estilos específicos para el cuerpo de la página */
+body {
+    background-image: url('https://wallpaperaccess.com/full/2465431.jpg'); /* Establece una imagen de fondo */
+    background-size: cover; /* Asegura que la imagen de fondo cubra todo el espacio disponible */
+    background-position: center; /* Centra la imagen de fondo */
+    position: relative; /* Establece la posición relativa como base para posicionar elementos absolutos dentro */
+    height: 100vh; /* Ajusta la altura del body al 100% del viewport */
+    color: #fff; /* Establece el color de texto por defecto a blanco */
+}
+
+/* Añade una capa oscura sobre la imagen de fondo para mejorar la legibilidad del texto */
+body::before {
+    content: ''; /* Necesario para que el pseudo-elemento funcione */
+    position: absolute; /* Posicionamiento absoluto respecto al body */
+    top: 0; /* Alineado arriba */
+    left: 0; /* Alineado a la izquierda */
+    right: 0; /* Alineado a la derecha */
+    bottom: 0; /* Alineado abajo */
+    background-color: rgba(0, 0, 0, 0.5); /* Color negro semitransparente */
+    z-index: 0; /* Coloca este fondo detrás de todo el contenido */
+}
+
+/* Estilos para las cabeceras y clases particulares para contenedores */
+header, .cl3, .cl1, .cl2 {
+    position: relative; /* Posicionamiento relativo para el z-index */
+    z-index: 1; /* Asegura que estos elementos estén por encima del fondo oscurecido */
+}
+
+/* Estilos para contenedores específicos, usados probablemente para formularios o secciones */
+.cl3 {
+    width: 80%; /* Ancho del 80% del contenedor padre */
+    max-width: 600px; /* Máximo ancho de 600px */
+    margin: 20px auto; /* Margen automático horizontal para centrar y 20px vertical */
+    padding: 20px; /* Padding interno */
+    background-color: rgba(255, 255, 255, 0.262); /* Fondo blanco semitransparente */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0,0,0,1); /* Sombra para efecto 3D */
+    font-size: 1rem; /* Tamaño de fuente estándar */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para inputs de texto, password y selectores */
+input[type="text"], input[type="password"], select {
+    padding: 10px; /* Padding interno para facilidad de escritura */
+    margin: 5px 0; /* Margen vertical para separar de otros elementos */
+    border-radius: 5px; /* Bordes redondeados suaves */
+    border: 1px solid #ccc; /* Borde sutil */
+    width: calc(100% - 22px); /* Ancho calculado para ajustarse correctamente con el padding y border */
+}
+
+/* Estilos para botones, usados probablemente para acciones de formularios */
+.btns {
+    padding: 10px 20px; /* Padding interno más generoso para facilidad de clic */
+    background-color: orange; /* Fondo naranja para destacar */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    color: white; /* Texto blanco para contraste */
+    cursor: pointer; /* Cursor tipo puntero para indicar interactividad */
+    transition: background-color 0.3s; /* Transición suave del color de fondo al interactuar */
+    font-size: medium; /* Tamaño de fuente mediano */
+}
+
+/* Estilos para botones al pasar el mouse */
+.btns:hover {
+    background-color: darkorange; /* Oscurece el fondo para indicar interactividad */
+}
