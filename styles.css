@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: #000000; /* Fondo del contenedor máster */
+    padding: 20px;
+    height: 100%; /* Altura completa de la ventana */
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 10% 25% 10% 55%; /* Altura de las filas */
+    grid-template-columns: 1fr 1fr; /* 2 columnas iguales */
+    height: 100%; /* Llenar el contenedor */
+}
+
+.item {
+    background-color: #223a54; /* Color de fondo de los items */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 3%;
+    margin-bottom: 2%; /* Separación entre filas */
+
+}
+
+.item1 {
+    grid-column: 1 / span 2; /* Ocupa ambas columnas en la fila 1 */
+}
+.item1 h1{
+    text-align: center; /* Centrar el texto */
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+    color: white; /* Color del texto */
+    font-size: 7vw;
+}
+.item5 {
+    grid-column: 1 / span 2; /* Ocupa ambas columnas en la fila 3 */
+}
+
+.item3 {
+    display: flex;
+    flex-direction: column; /* Permitir apilar la imagen y el h3 */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    overflow: hidden; /* Evitar que el contenido se desborde */
+}
+
+.item3-image {
+    width: 100%; /* Acoplar al tamaño del item */
+    height: auto; /* Mantener la proporción de la imagen */
+    max-height: 50%; /* Limitar la altura máxima al tamaño del item */
+    object-fit: contain; /* Asegurarse de que la imagen se vea completa */
+}
+
+
+.item2 p {
+    text-align: center; /* Centrar el texto */
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+    color: white; /* Color del texto */
+    font-size: 3vw;
+
+}
+
+.item7 {
+    grid-column: 1 / span 2; /* Ocupa ambas columnas en la fila 4 */
+    flex-direction: column; /* Permitir contenido vertical */
+}
+
+.subgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    gap: 5%; /* Separaciones del 5% */
+    width: calc(100% - 10%); /* Resta el 5% de cada lado */
+    height: 80%; /* Altura del 80% del contenedor */
+    margin: 5%; /* Margen del 5% alrededor */
+    min-height: 0; /* Permitir que la altura se ajuste */
+}
+
+.subitem {
+    background-color: #6FBF6F; /* Color de fondo de los subitems */
+    color: white;
+    display: flex;
+    flex-direction: column; /* Permitir contenido vertical */
+    justify-content: space-between; /* Separar filas */
+    padding: 3%; /* Espacio interno */
+    overflow: hidden; /* Evitar que se desborde el contenido */
+}
+
+.subitem-content {
+    display: flex;
+    background-color: rgb(125, 234, 139);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%; /* Separación entre filas */
+    flex-grow: 1; /* Permitir que crezca para llenar el espacio */
+}

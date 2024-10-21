@@ -1,23 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Grid Layout</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="container">
+        <div class="grid">
+            <div class="item item1">
+                <h1>
+                    José Diego TM
+                </h1>
+            </div>
+            <div class="item item3">
+                <img src="source/Gato.png" alt="Gato" class="item3-image">
+                
+            </div>
+            <div class="item item2">
+                <p>Administrador de tecnologías</p>
+            </div>
 
-    <div class="gato">
-        <img src="source/Gato.png" alt="Gato" id="imgGato">
+            <div class="item item7">Proyectos</div>
+            <div class="item item7">
+                <div class="subgrid">
+                    <div class="subitem">
+                        <div class="subitem-content">Columna 1 - Fila 1</div>
+                        <div class="subitem-content">Columna 1 - Fila 2</div>
+                    </div>
+                    <div class="subitem">
+                        <div class="subitem-content">Columna 2 - Fila 1</div>
+                        <div class="subitem-content">Columna 2 - Fila 2</div>
+                    </div>
+                    <div class="subitem">
+                        <div class="subitem-content">Columna 3 - Fila 1</div>
+                        <div class="subitem-content">Columna 3 - Fila 2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="presentacion">
-        <h1>Diego</h1>
-        <p>Apacionado en ciencias computacionales</p>
-        <hr>
-        <p>Ingeniero en seguridad informática y redes</p>
-    </div>
-    
-
 </body>
 </html>
