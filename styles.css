@@ -94,6 +94,7 @@ hr{
     margin: 1vw;
 }
 .subgrid {
+    background-color: rgba(12, 14, 44, 0.64);
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
     gap: 5%; /* Separaciones del 5% */
@@ -104,7 +105,6 @@ hr{
 }
 
 .subitem {
-    background-color: #6FBF6F; /* Color de fondo de los subitems */
     color: white;
     display: flex;
     flex-direction: column; /* Permitir contenido vertical */
@@ -115,7 +115,6 @@ hr{
 
 .subitem-content {
     display: flex;
-    background-color: rgb(125, 234, 139);
     justify-content: center;
     align-items: start;
     margin-bottom: 3%; /* Separación entre filas */
