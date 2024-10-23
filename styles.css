@@ -3,19 +3,20 @@
 }
 
 body {
+    background-image: url(source/Galaxia.jpg);
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
 .container {
-    background-image: url(source/Galaxia.jpg);
+    background-color: rgba(0, 0, 0, 0.673);
     padding: 20px;
     height: 100%; /* Altura completa de la ventana */
 }
 
 .grid {
     display: grid;
-    grid-template-rows: 15% 25% 15% 40%; /* Altura de las filas */
+    grid-template-rows: 10% 30% 10% 50%; /* Altura de las filas */
     grid-template-columns: 1fr 1fr; /* 2 columnas iguales */
     height: 100%; /* Llenar el contenedor */
 }
@@ -34,11 +35,12 @@ body {
 .item1 {
     grid-column: 1 / span 2; /* Ocupa ambas columnas en la fila 1 */
 }
-.item1 h1{
+.item1 p{
     text-align: center; /* Centrar el texto */
     margin: 1vw; /* Espacio entre la imagen y el texto */
     color: white; /* Color del texto */
-    font-size: 7vw;
+    font-size: 5vw;
+    /*text-shadow: 4px 4px 4px #aaa;*/
 }
 .item5 {
     grid-column: 1 / span 2; /* Ocupa ambas columnas en la fila 3 */
@@ -73,11 +75,12 @@ body {
 .item2 p {
     text-align: justify; /* Centrar el texto */
     color: white; /* Color del texto */
-    font-size: 3vw;
+    font-size: 2vw;
     margin: 2vw 0;
-    
 }
-
+#pname{
+    font-size: 4vw;
+}
 
 .item7 {
     grid-column: 1 / span 2; /* Ocupa ambas columnas en la fila 4 */
@@ -99,7 +102,7 @@ hr{
     grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
     gap: 5%; /* Separaciones del 5% */
     width: calc(100% - 10%); /* Resta el 5% de cada lado */
-    height: 80%; /* Altura del 80% del contenedor */
+    height: 100%; /* Altura del 80% del contenedor */
     margin: 5%; /* Margen del 5% alrededor */
     min-height: 0; /* Permitir que la altura se ajuste */
 }
