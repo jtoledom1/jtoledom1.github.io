@@ -133,12 +133,15 @@ hr{
     background-image: url(source/ai-generated-8703064_1280.jpg);
 }
 .c3f1{
-    
+    background-image: url(source/pexels-joel-super-188959-2315265.jpg);
 }
 
 .c1f1:hover{
-    background-size: 150%; /* Ajusta este valor para controlar el zoom */
+    background-size: 170%; /* Ajusta este valor para controlar el zoom */
 }
 .c2f1:hover{
     background-size: 150%; /* Ajusta este valor para controlar el zoom */
+}
+.c3f1:hover{
+    background-size: 170%; /* Ajusta este valor para controlar el zoom */
 }
