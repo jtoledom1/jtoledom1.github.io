@@ -121,15 +121,24 @@ hr{
     margin-bottom: 3%; /* Separación entre filas */
     flex-grow: 1; /* Permitir que crezca para llenar el espacio */
     max-height: 100%;
-}
-
-.c1f1{
-    background-image: url(source/kettlebell-6995813_1280.jpg);
     background-size: cover; /* Para que la imagen cubra todo el contenedor */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */    
 }
 
-.c1f1:hover {
-    background-size: 130%; /* Ajusta este valor para controlar el zoom */
+.c1f1{
+    background-image: url(source/kettlebell-6995813_1280.jpg);
+}
+.c2f1 {
+    background-image: url(source/ai-generated-8703064_1280.jpg);
+}
+.c3f1{
+    
+}
+
+.c1f1:hover{
+    background-size: 150%; /* Ajusta este valor para controlar el zoom */
+}
+.c2f1:hover{
+    background-size: 150%; /* Ajusta este valor para controlar el zoom */
 }
