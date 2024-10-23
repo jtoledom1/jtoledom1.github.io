@@ -15,12 +15,13 @@ body {
 
 .grid {
     display: grid;
-    grid-template-rows: 10% 25% 10% 50%; /* Altura de las filas */
+    grid-template-rows: 15% 25% 15% 40%; /* Altura de las filas */
     grid-template-columns: 1fr 1fr; /* 2 columnas iguales */
     height: 100%; /* Llenar el contenedor */
 }
 
 .item {
+    
     color: white;
     display: flex;
     justify-content: center;
@@ -61,7 +62,6 @@ body {
 }
 
 .item2{
-    background-image: url(source/Galaxia.jpg);
     display: flex;
     flex-direction: column; /* Permitir apilar la imagen y el h3 */
     justify-content: center; /* Centrar verticalmente */
@@ -75,6 +75,7 @@ body {
     color: white; /* Color del texto */
     font-size: 3vw;
     margin: 2vw 0;
+    
 }
 
 
@@ -94,7 +95,6 @@ hr{
     margin: 1vw;
 }
 .subgrid {
-    background-color: rgba(12, 14, 44, 0.64);
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
     gap: 5%; /* Separaciones del 5% */
@@ -105,6 +105,8 @@ hr{
 }
 
 .subitem {
+    background-color: rgba(240, 248, 255, 0.295);
+    border-radius: 7%;
     color: white;
     display: flex;
     flex-direction: column; /* Permitir contenido vertical */
@@ -123,7 +125,7 @@ hr{
     background-size: cover; /* Para que la imagen cubra todo el contenedor */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */    
-    border-radius: 90%;
+    border-radius: 20%;
 }
 
 .c1f1{
