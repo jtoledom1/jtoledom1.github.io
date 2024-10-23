@@ -4,14 +4,16 @@
 
 body {
     background-image: url(source/Galaxia.jpg);
-    margin: 0;
     font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0;
 }
 
 .container {
-    background-color: rgba(0, 0, 0, 0.673);
-    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.582);
+    min-height: 100vh;
     height: 100%; /* Altura completa de la ventana */
+    perspective: 1000px;
 }
 
 .grid {
@@ -47,11 +49,10 @@ body {
 }
 
 .item3 {
-    
     display: flex;
     flex-direction: column; /* Permitir apilar la imagen y el h3 */
     justify-content: center; /* Centrar verticalmente */
-    align-items: end; /* Centrar horizontalmente */
+    align-items: center; /* Centrar horizontalmente */
     overflow: hidden; /* Evitar que el contenido se desborde */
 }
 
@@ -69,7 +70,8 @@ body {
     justify-content: center; /* Centrar verticalmente */
     align-items: center; /* Centrar horizontalmente */
     overflow: hidden; /* Evitar que el contenido se desborde */
-    padding: 2vw;
+    padding: 3vw;
+    margin: 5vw;
 }
 
 .item2 p {
