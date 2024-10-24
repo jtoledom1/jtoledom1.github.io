@@ -1,0 +1,31 @@
+{
+  "codigo_soldado": "S12345",
+  "nombre": "Juan",
+  "apellidos": "Pérez Gómez",
+  "graduacion": "Sargento",
+  "cuerpo": {
+    "codigo_cuerpo": "C01",
+    "denominacion": "Infantería"
+  },
+  "compania": {
+    "numero_compania": "C1",
+    "actividad_principal": "Defensa",
+    "cuartel": {
+      "codigo_cuartel": "Q001",
+      "nombre": "Cuartel General",
+      "ubicacion": "Madrid"
+    }
+  },
+  "servicios": [
+    {
+      "codigo_servicio": "S001",
+      "descripcion": "Guardia",
+      "fecha_realizacion": "2023-10-01"
+    },
+    {
+      "codigo_servicio": "S002",
+      "descripcion": "Imaginaria",
+      "fecha_realizacion": "2023-10-10"
+    }
+  ]
+}

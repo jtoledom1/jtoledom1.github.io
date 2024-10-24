@@ -18,22 +18,30 @@ body {
 
 .grid {
     display: grid;
-    grid-template-rows: 10% 30% 10% 50%; /* Altura de las filas */
+    grid-template-rows: 10% 30% 5% 50%; /* Altura de las filas */
     grid-template-columns: 1fr 1fr; /* 2 columnas iguales */
     height: 100%; /* Llenar el contenedor */
 }
 
 .item {
-    
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 3%;
+    border-radius: 1%;
     margin-bottom: 2%; /* Separación entre filas */
 
 }
+a {
 
+    color:  rgb(44, 43, 43);
+}
+a p:hover{
+    color: white;
+}
+#title:hover{
+    color: white;
+}
 .item1 {
     grid-column: 1 / span 2; /* Ocupa ambas columnas en la fila 1 */
 }
@@ -88,6 +96,14 @@ body {
     grid-column: 1 / span 2; /* Ocupa ambas columnas en la fila 4 */
     flex-direction: column; /* Permitir contenido vertical */
 }
+.item9 {
+    background-color: rgba(0, 0, 45, 0.185);
+    grid-column: 1 / span 2; /* Ocupa ambas columnas en la fila 4 */
+    flex-direction: column; /* Permitir contenido vertical */
+    margin-bottom: 0%;
+    height: 80%;
+    /*height: ;*/
+}
 .item7 p {
     text-align: center; /* Centrar el texto */
     color: white; /* Color del texto */
@@ -102,17 +118,16 @@ hr{
 .subgrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
-    gap: 5%; /* Separaciones del 5% */
+    gap: 2%; /* Separaciones del 5% */
     width: calc(100% - 10%); /* Resta el 5% de cada lado */
-    height: 100%; /* Altura del 80% del contenedor */
-    margin: 5%; /* Margen del 5% alrededor */
+    height: 80%; /* Altura del 80% del contenedor */
     min-height: 0; /* Permitir que la altura se ajuste */
 }
 
 .subitem {
-    background-color: rgba(240, 248, 255, 0.295);
+    background-color: rgba(2, 26, 44, 0.464);
     border-radius: 7%;
-    color: white;
+    color: rgb(103, 103, 103);
     display: flex;
     flex-direction: column; /* Permitir contenido vertical */
     justify-content: space-between; /* Separar filas */
@@ -120,19 +135,36 @@ hr{
     overflow: hidden; /* Evitar que se desborde el contenido */
 }
 
+.subitem:hover {
+    background-color: rgb(79, 103, 124);
+}
+.subitem-content:hover{
+    background-color: rgb(88, 88, 88);
+    color: rgb(252, 251, 251);
+}
+
 .subitem-content {
+    background-color: white;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     margin-bottom: 3%; /* Separación entre filas */
     flex-grow: 1; /* Permitir que crezca para llenar el espacio */
     max-height: 100%;
     background-size: cover; /* Para que la imagen cubra todo el contenedor */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */    
-    border-radius: 20%;
+    border-radius: 10%;
+    flex-direction: column; /* Permitir apilar la imagen y el h3 */
+    overflow: hidden; 
 }
-
+.subitem-content p{
+    font-size: 2vw;
+}
+.subitem-content:hover #title{
+    color: white;
+    font-size: 3vw;
+}
 .c1f1{
     background-image: url(source/kettlebell-6995813_1280.jpg);
 }
@@ -144,11 +176,13 @@ hr{
 }
 
 .c1f1:hover{
-    background-size: 170%; /* Ajusta este valor para controlar el zoom */
+    background-size: 110%; /* Ajusta este valor para controlar el zoom */
 }
 .c2f1:hover{
-    background-size: 150%; /* Ajusta este valor para controlar el zoom */
+    background-size: 110%; /* Ajusta este valor para controlar el zoom */
+
 }
 .c3f1:hover{
-    background-size: 170%; /* Ajusta este valor para controlar el zoom */
+    background-size: 110%; /* Ajusta este valor para controlar el zoom */
+
 }
