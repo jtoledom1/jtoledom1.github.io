@@ -33,14 +33,13 @@
 }
 
 .menu__bar {
-    position: sticky;
+    position:static;
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
     flex-direction: row;
     padding: 0 1rem;
     gap: 2rem;
@@ -123,6 +122,7 @@
     .menu-icon {
         display: none;
     }
+
 }
 
 @media (max-width: 600px) {
@@ -134,7 +134,10 @@
     .menu-icon {
         display: block;
     }
-
+    .avion{
+        height: 40vw;
+        width: 50vw;
+    }
     .navigation--mobile {
         top: var(--navbar-height);
         position: absolute;

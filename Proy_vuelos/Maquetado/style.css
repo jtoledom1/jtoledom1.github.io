@@ -26,10 +26,9 @@ body, html {
     padding-right: 40px;
     
   }
-  .content {
+  .content h1{
     text-align: Left;
     color: black; /* Color del texto */
-    height: 100%;
     padding: 20px;
   }
   h1{
@@ -47,16 +46,15 @@ body, html {
   }
   .avion
   {
-    display: flex;
-    position: fixed;
+    position:sticky; 
     justify-content: left;
     align-items: center;
     background-image: url('img/lugar-vuelo-cielo-atardecer.png');
     background-size: cover;
     background-position: center;
     transform: scaleX(-1);
-    height: 70%;
-    width: 60%;
+    height: 18vw;
+    width: 35vw;
   }
   .img01{
     background-image: url(img/passport-ticket.png);
