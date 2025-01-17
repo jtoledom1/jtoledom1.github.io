@@ -15,14 +15,16 @@ body {
     align-items: start;
     padding: 2rem;
 }
- 
+
 .articles {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
     justify-content: center;
-    max-width: 75rem;
-    gap: 1.5rem;
+    max-width: 100rem;
+    /* gap: 10rem; */
+    column-gap: 10rem;
+    row-gap: 5rem;
 }
  
 .articles article {
@@ -48,17 +50,18 @@ body {
     color: var(--secondary);
     transition: color 0.3s ease-out;
 }
-  
-  
+
+
 .articles article img {
     max-width: 100%;
     transform-origin: center;
     transition: transform 0.4s ease-in-out;
 }
-  
+
 .article-preview {
     padding: 1.5rem;
     background: white;
+    height: 100%;
 }
 
 .articles figure {
