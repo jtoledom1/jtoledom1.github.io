@@ -10,48 +10,44 @@
     <title>Document</title>
     <style>
         body{
-            background-image: url(img/black_grey_vertical_wavy_lines_background.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
+            background: linear-gradient(rgb(203, 178, 102), rgba(240, 240, 240, 0.214));
+            width: 100vw;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .cont{
-            background: linear-gradient(rgba(255, 255, 255, 0.626), rgba(44, 44, 44, 0.522));
-            position: relative;
             width:100vw;
-            height: 100vh;
-            margin:0 auto;
-            overflow: scroll;
+            height: 100VH;
+            align-content: center;
+            overflow: hidden;
+        }
+        .inpu a {
+            text-align: center;
+            display: block;
         }
         h1,p{
             text-align: center;
-            width: fi;
         }
         label,input{
-            font-size: 1.5rem;
-
+            font-size: 1.2rem;
         }
         .inpu{
-            display: inline-block;
-            position: absolute;
-            margin: 0 auto;
-            left: 30%;
+            text-align:center;
+            display: block;
+            margin-top: 2%;
         }
         input{
-            margin-top: 3%;
+            margin-top: 2%;
         }
-        input[type=submit]{
-            display: inline-block;
-            border-radius: 10%;
-            position: absolute;
-            left:30%;
-            margin-top: 10%;
-        }
-        p{
+/*         p{
             font-family: Arial, Helvetica, sans-serif;
             text-align: justify;
             line-height: 1.5;
-        }
+        } */
     </style>
 </head>
 <body>
@@ -59,31 +55,20 @@
         <h1 style="font-size: 3rem;">Registrarse</h1>
         <div class="inpu">
             <form action="#" method="post">
-                <label for="">nombre: </label>
+
+                <input type="text" name="" id="" placeholder="Nombre:">
+                <input type="text" name="" id="" placeholder="Apellidos">
                 <br>
-                <input type="text" name="" id="">
+                <input type="email" name="" id=""placeholder="Email:">
                 <br>
-                <label for="">apellido: </label>
+                <input type="password" name="" id=""placeholder="Contraseña:">
                 <br>
-                <input type="text" name="" id="">
-                <br>
-                <label for="">email:</label>
-                <br>
-                <input type="email" name="" id="">
-                <br>
-                <label for="">password:</label>
-                <br>
-                <input type="password" name="" id="">
-                <br>
-                <label for="">confirmar password:</label>
-                <br>
-                <input type="password" name="" id="">
-                <br>
+                <input type="password" name="" id=""placeholder="Confirmar contraseña:">
+                <a href="login.html">
+                    <p>Ya tienes cuenta?</p>
+                </a>
                 <a href="../Saas/index-User.html">
                     <input type="button" value="Enviar">
-                </a>
-                <a href="login.html" style="top: 2vh; right: -15vh; position: relative;">
-                    <p>Ya tienes cuenta?</p>
                 </a>
             </form>
         </div>
